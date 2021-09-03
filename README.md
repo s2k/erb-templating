@@ -86,4 +86,4 @@ def render(template, configuration_data)
   ERB.new(template).result(config_object.instance_eval { binding })
 end
 ```
-Why to the test runs behave differently?
+Why do the test runs behave differently?
