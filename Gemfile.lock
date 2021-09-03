@@ -2,14 +2,12 @@ GEM
   remote: https://rubygems.org/
   specs:
     minitest (5.14.4)
-    yaml (0.1.1)
 
 PLATFORMS
   x86_64-darwin-20
 
 DEPENDENCIES
   minitest (~> 5.14.4)
-  yaml
 
 RUBY VERSION
    ruby 3.0.2p107
