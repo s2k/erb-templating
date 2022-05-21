@@ -2,6 +2,7 @@
 
 source 'https://rubygems.org'
 
-ruby '3.0.2'
+ruby '3.1.2'
 
 gem 'minitest', '~> 5.14.4'
+gem 'rubocop', group: 'development'
