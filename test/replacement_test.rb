@@ -8,16 +8,9 @@ class TestRendering < Minitest::Test
     assert_equal "Render 'that' text", render("Render '<%= test_key %>' text", {test_key: "that"})
   end
 
-  def test_render_warning_for_missing_key
-
-    expected_text   = "Render '#{MISSING_CONFIG_MARKER}' text"
+  def test_missing_key_causes_an_exception
     template_string = "Render '<%= test_key %>' text"
     config_values   = {}
-    puts "ARGS for render method:"
-    puts "expected_text   : #{expected_text}"
-    puts "template_string : #{template_string}"
-    puts "config_values   : #{config_values}"
-
-    assert_equal expected_text, render(template_string, config_values)
+    assert_raises(NameError) { render(template_string, config_values) }
   end
 end

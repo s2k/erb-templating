@@ -2,8 +2,8 @@
 
 source 'https://rubygems.org'
 
-ruby '3.1.2'
+ruby '3.3.1'
 
-gem 'minitest', '~> 5.14.4'
+gem 'minitest'
 gem 'rubocop', group: 'development'
 gem 'rubocop-performance', group: 'development'
